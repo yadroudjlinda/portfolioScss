@@ -1,0 +1,50 @@
+// @import "_variables";
+@import "_mixin";
+
+.btn-rounded {
+    padding: 0.75rem 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    border: none;
+    background-color: $white;
+    transition: all 0.5s ease-in;
+
+    .btn__text {
+       color: $primary;
+       transition: all 0.5s ease-in;
+    }
+
+    .btn__icon {
+        color: $white;
+        background-color: $primary;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+    }
+
+    &:hover {
+        @include gradient;
+        color: $white;
+        transition: all 0.5s ease-in;
+
+        .btn__text {
+            color: $white;
+         }
+     
+         .btn__icon {
+            color: $primary;
+            background-color: $white;
+         }
+    }
+}
+
+
+    .btn--blue {
+        background-color: $primary !important;
+    }     
+
+
