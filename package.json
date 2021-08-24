@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build --no-minify src/index.html --public-url ./"
+    "clean": "rm -fr dist/",
+    "start": "parcel src/index.html -p 3000 --open",
+    "build": "npm run clean && parcel build src/index.html --public-url ./"
   },
   "author": "",
   "license": "ISC",
